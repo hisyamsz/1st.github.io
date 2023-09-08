@@ -1,0 +1,298 @@
+:root {
+    --pink: #efa29a;
+    --lilac: #C8A2C8;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 4000px;
+    padding-right: 1px !important;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-img2.jpg);
+    filter: grayscale();
+    background-size: cover;
+    background-position: center;
+    z-index: -1
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 6.7rem;
+    text-shadow: var(--shadow);
+    color: var(--lilac);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    text-shadow: var(--shadow);
+    /* color: var(--lilac); */
+}
+
+.hero h4 {
+    text-shadow: var(--shadow);
+    color: var(--lilac);
+}
+
+.hero a {
+    color: var(--lilac);
+    background-color: white;
+}
+
+.hero a:hover {
+    color: white;
+    background-color: var(--lilac);
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+.offcanvas {
+    height: 100vh;
+}
+
+.navbar-brand {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--lilac);
+}
+
+.navbar-brand:hover {
+    color: var(--pink);
+}
+
+.offcanvas-title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--lilac);
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--lilac);
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.home {
+    background-image: url(img/flower-pattern.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -4.5rem;
+    padding-top: 6rem;
+}
+
+.home h5 {
+    color: var(--pink);
+}
+
+.home p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.memories {
+    background-color: #f6e5f6;
+    padding-top: 6rem;
+    min-height: 100vh;
+}
+
+.memories h2,
+.lastpage h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-shadow: var(--shadow);
+    color: var(--lilac);
+}
+
+.memories p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.lastpage {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    background-color: #eee3f0;
+    padding-top: 8rem;
+    padding-bottom: 8.5rem;
+}
+
+.card {
+    background-color: var(--pink);
+}
+
+.lastpage p,
+.card-header {
+    color: #0a0a0a;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.lastpage a {
+    color: var(--pink);
+    background-color: white;
+}
+
+.lastpage a:hover {
+    color: white;
+    background-color: var(--lilac);
+}
+
+footer {
+    padding: 2.5rem;
+    background-color: var(--lilac);
+}
+
+footer a {
+    color: var(--bg);
+}
+
+footer a:hover {
+    color: blueviolet;
+}
+
+.audio-icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.3rem;
+    position: fixed;
+    bottom: 1.1rem;
+    right: 1rem;
+    line-height: 0;
+    cursor: pointer;
+    color: var(--lilac);
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        text-align: center;
+        color: var(--lilac);
+    }
+
+    .sticky-top {
+        overflow: hidden;
+    }
+
+    .home h5 {
+        font-size: large;
+    }
+
+    .home p {
+        font-size: medium;
+    }
+
+    .card {
+        font-size: medium;
+    }
+
+    .lastpage .container h2 {
+        font-size: 330%;
+    }
+
+    .lastpage .card {
+        font-size: medium;
+    }
+
+    footer {
+        font-size: 105%;
+    }
+
+}
+
+/* handphone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .home h5 {
+        font-size: large;
+    }
+
+    .home p {
+        font-size: 115%;
+    }
+
+    .memories h2 {
+        font-size: xx-large;
+    }
+
+    .memories p {
+        font-size: small;
+    }
+
+    .card {
+        font-size: medium;
+    }
+
+    .lastpage .container h2 {
+        font-size: 320%;
+    }
+
+    .lastpage h5 {
+        font-size: 100%;
+    }
+
+    .lastpage .card {
+        font-size: small;
+    }
+
+    footer {
+        font-size: 110%;
+    }
+
+}
