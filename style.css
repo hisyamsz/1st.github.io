@@ -52,6 +52,7 @@ body {
 .hero a {
     color: var(--lilac);
     background-color: white;
+    font-size: 1.4rem;
 }
 
 .hero a:hover {
@@ -151,12 +152,33 @@ body {
     font-weight: 400;
 }
 
-.lastpage a {
-    color: var(--pink);
-    background-color: white;
+.card-header {
+    font-size: 1.5rem;
+    margin-top: 5px;
 }
 
-.lastpage a:hover {
+.modal-content {
+    background-color: #e5d5d8;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.modal-content h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modal-footer, .modal-header {
+    background-color: var(--pink);
+}
+
+.flower {
+    color: var(--pink);
+    background-color: white;
+    width: 100px;
+    font-size: 1.1rem;
+}
+
+.flower:hover {
     color: white;
     background-color: var(--lilac);
 }

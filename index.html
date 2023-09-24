@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,7 +36,7 @@
         <h4>🎉 🎉 🎉</h4>
         <h1>Happy Anniversary 1st</h1>
         <p>26 September 2023</p>
-        <a href="#notes" class="btn btn-lg mt-4" onClick="enableScroll()"
+        <a href="#notes" class="btn btn-lg mt-4" title="Next!" onClick="enableScroll()"
           >Next</a
         >
       </main>
@@ -46,7 +46,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Anniversary</a>
+        <a class="navbar-brand" href="#" title="Home">Anniversary</a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -76,9 +76,9 @@
           </div>
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#notes">Notes</a>
-              <a class="nav-link" href="#memories">Memories</a>
-              <a class="nav-link" href="#lastpage">Last Page</a>
+              <a class="nav-link" href="#notes" title="Notes">Notes</a>
+              <a class="nav-link" href="#memories" title="Memories">Memories</a>
+              <a class="nav-link" href="#lastpage" title="Last Page">Last Page</a>
             </div>
           </div>
         </div>
@@ -583,18 +583,59 @@
             <h2>Last Page</h2>
           </div>
           <div class="card text-bg text-center mt-5 mb-5 border-0">
-            <div class="card-header"><h5>Thanks for reading :)</h5></div>
+            <div class="card-header "><h5>Thanks for reading :)</h5></div>
             <div class="card-body">
               <p>
-                "Oh, iya. Website ini ku buat udah dari sebulan yang lalu,
-                ku sengaja bikin website ini buat ngerayain anniversary kita yang
+                "Oh, iya. Website ini ku buat udah dari sebulan yang lalu, ku
+                sengaja bikin website ini buat ngerayain anniversary kita yang
                 pertama (ehehe), dan juga website ini website pertama yang ku
                 bikin hasil belajar ku (maaf ya kalo jelek). Karna kita jauh
-                huhu, jadi ku buat ini dengan sepenuh hati ku 💖(ehehe)."
+                huhu, jadi ku buat ini dengan sepenuh hati ku 💖(ehehe). Semoga rara suka ya 🙌"
               </p>
-              <a href="https://wa.me/6285788932401" class="btn btn-lg mb-1"
-                >Click Me!</a
+              <!-- Button trigger modal -->
+              <a
+                type="button"
+                class="btn flower m-1 w-auto"
+                title="More Suprise!"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
               >
+                Click Me!
+              </a>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                      <h4 class="modal-title" id="staticBackdropLabel">
+                        More suprise for you!
+                      </h4>
+                    </div>
+                    <div class="modal-body mt-1">I Love You Cantikk 💝</div>
+                    <img class="modal-body" src="img/flower.jpg" alt="Love" />
+                    <div class="modal-body">-bb</div>
+                    <div class="modal-footer justify-content-center">
+                      <a
+                        type="button"
+                        class="btn w-auto flower"
+                        title="Love you too!!!"
+                        data-bs-dismiss="modal"
+                      >
+                        I Love You Too 💕
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -613,19 +654,21 @@
 
             <div>
               <small class="block"
-              >Design by
-              <a
-                href="https://instagram.com/hisyamsz_"
-                class="text-decoration-none"
-                >@Hisyam</a
+                >Design by
+                <a
+                  href="https://instagram.com/hisyamsz_"
+                  class="text-decoration-none"
+                  title="Hisyam"
+                  >@Hisyam</a
+                >
+                to
+                <a
+                  href="https://instagram.com/alsaurus_"
+                  class="text-decoration-none"
+                  title="Rara💜"
+                  >@Rara💜</a
+                ></small
               >
-              to
-              <a
-                href="https://instagram.com/alsaurus_"
-                class="text-decoration-none"
-                >@Rara💜</a
-              ></small
-            >
             </div>
           </div>
         </div>
@@ -638,7 +681,7 @@
         <source src="audio/sempurna.mp3" type="audio/mp3" />
       </audio>
 
-      <div class="audio-icon" style="display: none">
+      <div class="audio-icon" title="Play/Pause" style="display: none">
         <i class="bi bi-disc"></i>
       </div>
     </div>
