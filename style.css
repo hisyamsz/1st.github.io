@@ -265,8 +265,16 @@ footer a:hover {
         font-size: 330%;
     }
 
+    .lastpage .card h5 {
+        font-size: 103%;
+    }
+
     .lastpage .card {
         font-size: medium;
+    }
+
+    .card-body a {
+        font-size: 90%;
     }
 
     footer {
@@ -305,12 +313,16 @@ footer a:hover {
         font-size: 320%;
     }
 
-    .lastpage h5 {
-        font-size: 100%;
+    .lastpage .card .card-header h5 {
+        font-size: 70%;
     }
 
     .lastpage .card {
         font-size: small;
+    }
+
+    .card-body a {
+        font-size: 100%;
     }
 
     footer {
